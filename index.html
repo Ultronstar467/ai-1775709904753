@@ -1,0 +1,51 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1>FastAPI Calculator</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-section">
+            <h2>Perform Calculations</h2>
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="First number" required>
+                <select id="operator" aria-label="Operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="num2" placeholder="Second number" required>
+            </div>
+            <button id="calculate-btn">Calculate</button>
+            
+            <div class="result-area">
+                <p>Result: <span id="result"></span></p>
+            </div>
+            <p class="error-message" id="error-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 FastAPI Calculator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
